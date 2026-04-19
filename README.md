@@ -63,6 +63,8 @@ The gateway runs as an Envoy HTTP filter, intercepting requests and applying pro
 
 > **Tip:** If Ollama is slow on first request, it's loading the model into memory. Subsequent requests are much faster. You can pre-warm it with `curl http://localhost:11434/api/generate -d '{"model":"qwen2","prompt":"hi"}'` before starting the gateway.
 
+> **Tip:** To quickly check which models you have pulled locally, run `ollama list`. Handy when you forget what's available after not using this for a while.
+
 ## Contributing
 
 Please open an issue before submitting large PRs. See [`.github/ISSUE_TEMPLATE`](.github/ISSUE_TEMPLATE/) for issue guidelines.
