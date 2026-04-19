@@ -33,6 +33,7 @@ AI Gateway extends Envoy Proxy with first-class support for AI provider APIs (Op
    ollama serve
    ollama pull llama3
    ollama pull mistral  # also works well for testing
+   ollama pull phi3     # lightweight, good for quick iteration
    ```
 
 3. Run the gateway:
