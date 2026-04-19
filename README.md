@@ -61,6 +61,8 @@ The gateway runs as an Envoy HTTP filter, intercepting requests and applying pro
 
 > **Personal note:** I primarily use this with Ollama + qwen2 locally. If you're just getting started, `phi3` is the fastest to pull and good enough for most testing. The `make run` target assumes Ollama is already running on port 11434.
 
+> **Tip:** If Ollama is slow on first request, it's loading the model into memory. Subsequent requests are much faster. You can pre-warm it with `curl http://localhost:11434/api/generate -d '{"model":"qwen2","prompt":"hi"}'` before starting the gateway.
+
 ## Contributing
 
 Please open an issue before submitting large PRs. See [`.github/ISSUE_TEMPLATE`](.github/ISSUE_TEMPLATE/) for issue guidelines.
