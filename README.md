@@ -35,6 +35,7 @@ AI Gateway extends Envoy Proxy with first-class support for AI provider APIs (Op
    ollama pull mistral  # also works well for testing
    ollama pull phi3     # lightweight, good for quick iteration
    ollama pull qwen2    # my preferred model for coding tasks
+   ollama pull gemma3   # added: strong reasoning, worth trying
    ```
 
 3. Run the gateway:
